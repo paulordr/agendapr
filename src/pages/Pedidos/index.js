@@ -12,7 +12,7 @@ export default function pedidos() {
   
   useEffect(() => {
     async function loadSolicitacoes(){
-      const response = await api.get('pedidos');
+      const response = await api.get('ug/33/tipossolicitacaoporug');
       setSolicitacoes(response.data);
     }
     loadSolicitacoes();
@@ -23,7 +23,7 @@ export default function pedidos() {
       <Title> Lista de Solicitações </Title>
       <List 
       data={solicitacoes}
-      keyExtractor={item => String (solicitacoes.id)}
+      keyExtractor={item => String (solicitacoes.cod_tipo_pedido_agenda)}
       renderItem={({ item }) => <Lista data ={item}/>}
       />
     </Container>

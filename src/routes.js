@@ -45,7 +45,7 @@ const Stack = createStackNavigator();
 
 const Routes = () => (
   <Stack.Navigator>
-     {/* <Stack.Screen name="SignIn" component={SignIn} barStyle="light-content" backgroundColor="#1735CC"/> */}
+     <Stack.Screen name="SignIn" component={SignIn} barStyle="light-content" backgroundColor="#1735CC"/>
      <Stack.Screen name="Pedidos" component={Pedidos} barStyle="light-content" backgroundColor="#1735CC"/>
   </Stack.Navigator>
   );

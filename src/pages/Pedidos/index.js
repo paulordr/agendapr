@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import Background from '~/components/Background';
 
 import api from '~/services/api';
 import Lista from '~/components/Lista';
@@ -21,6 +22,7 @@ export default function pedidos() {
   }, []);
   
   return (
+    <Background>
     <Container>
       <Title> Lista de Solicitações </Title>
       <List 
@@ -29,5 +31,6 @@ export default function pedidos() {
       renderItem={({ item }) => <Lista data ={item}/>}
       />
     </Container>
+    </Background>
   );
 }

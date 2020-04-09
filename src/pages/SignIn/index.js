@@ -25,6 +25,7 @@ export default function SignIn({ navigation }) {
 
 function handleSubmit(){
   dispatch(signInRequest(sAMAccountName, password));
+  navigation.navigate('Pedidos');
 };
 
   return (

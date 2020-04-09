@@ -9,10 +9,12 @@ import { Container, Title, List } from './styles';
 export default function pedidos() {
   
   const [solicitacoes, setSolicitacoes] = useState([]);
-  
+  const header = {
+    headers: {'ug': '33'}
+  };
   useEffect(() => {
     async function loadSolicitacoes(){
-      const response = await api.get('ug/33/tipossolicitacaoporug');
+      const response = await api.get('pedido/10', teste);
       setSolicitacoes(response.data);
     }
     loadSolicitacoes();

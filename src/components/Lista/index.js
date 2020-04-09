@@ -10,7 +10,7 @@ export default function Lista() {
       <Left>
       <Avatar source={{uri: 'https://api.adorable.io/avatar/50/rocketseat.png'}}/>
       <Info>
-        <Name>Paulo e Ingrid Plaster</Name>
+        <Name>Solicitação</Name>
         <Time>em 3 horas</Time>
       </Info>
       </Left>

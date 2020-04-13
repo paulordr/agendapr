@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import Background from '~/components/Background';
+// import Background from '~/components/Background';
 
 import api from '~/services/api';
 import Lista from '~/components/Lista';
@@ -15,22 +15,22 @@ export default function pedidos() {
   };
   useEffect(() => {
     async function loadSolicitacoes(){
-      const response = await api.get('pedido/10', header);
+      const response = await api.get('pedido/9', header);
       setSolicitacoes(response.data);
     }
     loadSolicitacoes();
   }, []);
   
   return (
-    <Background>
+    // <Background>
     <Container>
       <Title> Lista de Solicitações </Title>
       <List 
       data={solicitacoes}
-      keyExtractor={item => String (solicitacoes.cod_tipo_pedido_agenda)}
-      renderItem={({ item }) => <Lista data ={item}/>}
+      keyExtractor={item => String (solicitacoes.cod_pedido_agenda)}
+      renderItem={({ item }) => <Lista data={item}/>}
       />
     </Container>
-    </Background>
+    // </Background>
   );
 }

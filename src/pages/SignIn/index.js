@@ -55,7 +55,7 @@ function handleSubmit(){
             onChangeText={setPassword}
           />
           {/* loading={loading} */}
-          <SubmitButton onPress={handleSubmit}>Acessar</SubmitButton>
+          <SubmitButton onPress={handleSubmit}>ACESSAR</SubmitButton>
         </Form>
         {/* <SignLink onPress={() => navigation.navigate('SignUp')}>
           <SignLinkText> Criar conta gratuita </SignLinkText>

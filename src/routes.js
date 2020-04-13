@@ -39,13 +39,10 @@ const Stack = createStackNavigator();
 //    }),
 //  );
 
-
-
-
-
 const Routes = () => (
-  <Stack.Navigator>
-     <Stack.Screen name="SignIn" component={SignIn} barStyle="light-content" backgroundColor="#1735CC"/>
+  <Stack.Navigator headerMode="none">
+     <Stack.Screen name="SignIn" component={SignIn}/>
+     {/* <Stack.Screen name="SignIn" component={SignIn} backgroundColor="#1735CC" options={{ title: 'Login' }}/> */}
      <Stack.Screen name="Pedidos" component={Pedidos} barStyle="light-content" backgroundColor="#1735CC"/>
   </Stack.Navigator>
   );

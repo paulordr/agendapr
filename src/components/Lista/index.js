@@ -3,7 +3,7 @@ import { TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import Avatar from 'react-native-vector-icons/MaterialIcons';
 
-import { Container, Left, Info, Name, Time } from './styles';
+import { Container, Left, Info, Name, Local } from './styles';
 
 export default function Lista({ data }) {
   return (
@@ -12,7 +12,7 @@ export default function Lista({ data }) {
       <Avatar name="assignment"size={40} color="#50008d"/>
       <Info>
         <Name>{data.dsc_titulo_pedido_agenda}</Name>
-        <Time>{data.dsc_local_pedido_agenda}</Time>
+        <Local>{data.dsc_local_pedido_agenda}</Local>
       </Info>
       </Left>
     

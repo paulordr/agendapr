@@ -4,12 +4,16 @@ export const Container = styled.View`
   margin-bottom: 15px;
   padding: 20px;
   border-radius: 4px;
-  background: #FFF;
-
+  background: #F4F4FB;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  shadowColor: #000;
+  shadowOpacity: 0.37;
+  shadowRadius: 7.49;
+  elevation: 8;
 `;
 
 export const Left = styled.View`
@@ -27,12 +31,18 @@ export const Info = styled.View`
   margin-left: 15px;
 `;
 
-export const Name = styled.Text`
+export const Name = styled.Text.attrs({
+  numberOfLines: 1,
+  ellipsizeMode: "clip",
+})`
   font-weight: bold;
   font-size: 14px;
   color: #333;
 `;
-export const Time = styled.Text`
+export const Local = styled.Text.attrs({
+  numberOfLines: 1,
+  ellipsizeMode: 'tail',
+})`
   color: #999;  
   font-size: 13px;
   margin-top: 4px;

@@ -4,6 +4,7 @@ const INITIAL_STATE = {
   token: null,
   signed: false,
   loading: false,
+  ug: null,
 };
 
 export default function auth(state = INITIAL_STATE, action){
@@ -17,6 +18,7 @@ export default function auth(state = INITIAL_STATE, action){
         draft.token = action.payload.token;
         draft.signed = true;
         draft.loading = false;
+        draft.ug = action.payload.cod_ug;
         break;
       }
     case '@auth/SIGN_IN_FAILURE': {

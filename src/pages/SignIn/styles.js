@@ -8,6 +8,7 @@ export const Container = styled.KeyboardAvoidingView.attrs({
   enabled: Platform.OS === 'ios',
   behavior: 'padding',
 })`
+  margin-top: 100px;
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -16,15 +17,23 @@ export const Container = styled.KeyboardAvoidingView.attrs({
 
 export const Form = styled.View`
   align-self: stretch;
-  margin-top: 50px;
+  margin-top: 60px;
 `;
 
 export const FormInput = styled(Input)`
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 `;
 
 export const SubmitButton = styled(Button)`
-  margin-top: 5px;
+  margin-top: 15px;
+`;
+
+export const Text = styled.Text`
+  margin-top: 100px;  
+  margin-bottom: 1px;
+  font-size: 14px;
+  color: #fff;
+  align-self: center;
 `;
 
 export const SignLink = styled.TouchableOpacity`

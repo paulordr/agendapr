@@ -22,7 +22,7 @@ export function* signIn({payload}) {
     api.defaults.headers.Authorization = `Bearer ${token}`;
     //yield delay (3000);
     yield put(signInSuccess(token, user));
-    Alert.alert('Autenticação realizada', 'Token gerado com sucesso!');
+    //Alert.alert('Autenticação realizada', 'Token gerado com sucesso!');
     // history.push('./dashboard');
   } catch (err) {
     Alert.alert(

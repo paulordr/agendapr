@@ -43,6 +43,7 @@ const Routes = () => (
   <Stack.Navigator headerMode="none">
      <Stack.Screen name="SignIn" component={SignIn}/>
      {/* <Stack.Screen name="SignIn" component={SignIn} backgroundColor="#1735CC" options={{ title: 'Login' }}/> */}
+     <Stack.Screen name="Home" component={Home} barStyle="light-content" backgroundColor="#1735CC"/>
      <Stack.Screen name="Pedidos" component={Pedidos} barStyle="light-content" backgroundColor="#1735CC"/>
   </Stack.Navigator>
   );

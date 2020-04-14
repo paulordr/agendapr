@@ -11,6 +11,7 @@ import {
   Form,
   FormInput,
   SubmitButton,
+  Text,
   SignLink,
   SignLinkText,
 } from './styles';
@@ -25,7 +26,7 @@ export default function SignIn({ navigation }) {
 
 function handleSubmit(){
   dispatch(signInRequest(sAMAccountName, password));
-  navigation.navigate('Pedidos');
+  navigation.navigate('Home');
 };
 
   return (
@@ -60,7 +61,7 @@ function handleSubmit(){
         {/* <SignLink onPress={() => navigation.navigate('SignUp')}>
           <SignLinkText> Criar conta gratuita </SignLinkText>
         </SignLink> */}
-        {/* <Text> Diretoria de Tecnologia - Presidência da República </Text> */}
+        <Text> Diretoria de Tecnologia - Presidência da República </Text>
       </Container>
     </Background>
   );

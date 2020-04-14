@@ -15,7 +15,7 @@ export default function pedidos() {
   };
   useEffect(() => {
     async function loadSolicitacoes(){
-      const response = await api.get('pedido/9', header);
+      const response = await api.get('pedido/8', header);
       setSolicitacoes(response.data);
     }
     loadSolicitacoes();

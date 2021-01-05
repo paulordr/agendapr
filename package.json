@@ -14,7 +14,7 @@
     "@react-native-community/masked-view": "^0.1.7",
     "@react-navigation/native": "^5.1.4",
     "@react-navigation/stack": "^5.2.9",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "babel-plugin-root-import": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.2",
